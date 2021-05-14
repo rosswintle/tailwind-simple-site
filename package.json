@@ -1,0 +1,23 @@
+{
+  "name": "tailwind-simple-site",
+  "version": "1.0.0",
+  "description": "A simple website with TailwindCSS",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build:dev": "npx tailwindcss-cli@latest build ./src/tailwind.css -o ./dist/tailwind.css",
+    "build:prod": "NODE_ENV=production npx tailwindcss-cli@latest build ./src/tailwind.css -o ./dist/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rosswintle/tailwind-simple-site.git"
+  },
+  "author": "Ross Wintle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rosswintle/tailwind-simple-site/issues"
+  },
+  "homepage": "https://github.com/rosswintle/tailwind-simple-site#readme",
+  "dependencies": {
+    "@tailwindcss/forms": "^0.3.2"
+  }
+}
