@@ -4,8 +4,8 @@
   "description": "A simple website with TailwindCSS",
   "main": "tailwind.config.js",
   "scripts": {
-    "build:dev": "npx tailwindcss-cli@latest build ./src/tailwind.css -o ./dist/tailwind.css",
-    "build:prod": "NODE_ENV=production npx tailwindcss-cli@latest build ./src/tailwind.css -o ./dist/tailwind.css"
+    "build:dev": "npx tailwindcss-cli@latest build ./src/css/tailwind.css -o ./public/css/tailwind.css",
+    "build:prod": "NODE_ENV=production npx tailwindcss-cli@latest build ./src/css/tailwind.css -o ./public/css/tailwind.css"
   },
   "repository": {
     "type": "git",
