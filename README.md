@@ -21,7 +21,7 @@ See [this issue](https://github.com/tailwindlabs/tailwindcss/issues/4097)
 
 Requires node to be installed. Probably a recent version.
 
-* Download
+* `git clone git@github.com:rosswintle/tailwind-simple-site.git <directory>`
 * `npm install`
 * `./build.sh` or `./prod.sh`
 
