@@ -1,9 +1,16 @@
 # Tailwind Simple Site
 
-This is my very simple boilerplate template for simple sites/landing pages using
-TailwindCSS.
+A template for a small site using a simple PHP build process, TailwindCSS and AlpineJS
 
-It comes with:
+Read about this [in my blog post](https://rosswintle.uk/2022/08/why-i-love-and-how-i-make-simple-static-minimal-tech-websites/).
+
+## Notes
+
+1. This repo is *not* a library/dependence/framework. You should fork it and use it as a template for your own thing.
+2. It's using HTML, TailwindCSS, and a PHP build script. AlpineJS is included if you want to use it.
+3. You will need PHP installed locally. Probably v7.4 or higher. Not sure.
+
+The template comes with:
 
 * A REALLY simple HTML build that allows templates and partials
 * Tailwind CSS

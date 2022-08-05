@@ -3,7 +3,11 @@
 
 <?php includePart('../parts/head.html', ['title' => $title]) ?>
 
+<?php includePart('../parts/header.html'); ?>
+
 <body>
     <?= $content ?>
+
+    <?php includePart('../parts/footer.html') ?>
 </body>
 </html>

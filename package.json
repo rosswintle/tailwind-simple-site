@@ -1,23 +1,24 @@
 {
   "name": "tailwind-simple-site",
   "version": "1.0.0",
-  "description": "A simple website with TailwindCSS",
+  "description": "A template for a small site using a simple PHP build process, TailwindCSS and AlpineJS",
   "main": "tailwind.config.js",
   "scripts": {
-    "build:dev": "npx tailwindcss-cli@latest build ./src/css/tailwind.css -o ./public/css/tailwind.css",
-    "build:prod": "NODE_ENV=production npx tailwindcss-cli@latest build ./src/css/tailwind.css -o ./public/css/tailwind.css"
+    "build:dev": "npx tailwindcss build -i ./src/css/styles.css -o ./public/css/styles.css",
+    "build:prod": "NODE_ENV=production npx tailwindcss-cli@latest build -i ./src/css/styles.css -o ./public/css/styles.css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rosswintle/tailwind-simple-site.git"
   },
   "author": "Ross Wintle",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/rosswintle/tailwind-simple-site/issues"
   },
   "homepage": "https://github.com/rosswintle/tailwind-simple-site#readme",
-  "dependencies": {
-    "@tailwindcss/forms": "^0.3.2"
+  "devDependencies": {
+    "tailwindcss": "^3.1.7",
+    "@tailwindcss/forms": "^0.4"
   }
 }

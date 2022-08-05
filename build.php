@@ -19,6 +19,14 @@
  *
  *   includePart(string $relativePath, array $variables, bool $print)
  *
+ * If environment variables are needed you can define these as PHP constants in:
+ *
+ *  - env.php
+ *  - env.prod.php
+ *
+ * Don't put anything secret in here. These are compiled into the built HTML.
+ *
+ * To run in prod mode, call `build.php --prod`
  */
 
 $inPath  = __DIR__ . '/src/pages';
@@ -142,6 +150,13 @@ function build()
         $out = buildFile($file, false);
         file_put_contents($outfile, $out);
     }
+}
+
+if (isset($_SERVER['argv'][1]) && '--prod' === $_SERVER['argv'][1]) {
+    echo "Running production\n\n";
+    include('./env.prod.php');
+} else {
+    include('./env.php');
 }
 
 build();
